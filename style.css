@@ -278,12 +278,12 @@ a { color: inherit; }
 }
 
 .portrait {
-  grid-column: 9 / -1;
+  grid-column: 10 / -1;
   position: sticky;
   top: 10vh;
   margin-top: clamp(0px, 6vw, 96px);
 }
-.portrait-frame { overflow: hidden; aspect-ratio: 4 / 5; background: var(--paper-2); }
+.portrait-frame { overflow: hidden; aspect-ratio: 1 / 1; background: var(--paper-2); }
 .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transform-origin: 50% 40%; }
 .portrait figcaption { font-size: var(--step-small); margin-top: 10px; font-style: italic; }
 
@@ -637,7 +637,7 @@ a { color: inherit; }
    ========================================================== */
 @media (max-width: 1024px) {
   .path-list { grid-column: 1 / span 7; }
-  .portrait { grid-column: 8 / -1; }
+  .portrait { grid-column: 9 / -1; }
   .tools-side { grid-column: 1 / -1; position: static; margin-bottom: 48px; }
   .tool-list { grid-column: 1 / -1; }
   .work-index { grid-column: 1 / span 5; }
@@ -664,7 +664,7 @@ a { color: inherit; }
   .statement-cta { display: inline-block; margin-top: 20px; padding: 10px 0; }
 
   .path { display: block; }
-  .portrait { position: static; margin-top: 56px; }
+  .portrait { position: static; margin-top: 56px; width: 180px; }
   .row { grid-template-columns: 16px minmax(0, 1fr); }
   .row-value { grid-column: 2; text-align: left; margin-top: 4px; }
 
