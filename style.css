@@ -698,3 +698,10 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* link al repository Wazuh negli Strumenti */
+.tools-link { margin-top: 20px; }
+.tools-link a { color: #fff; text-underline-offset: 4px; }
+.tools-link a:hover { color: #aab3ff; }
+a.tool-name { display: inline-block; color: inherit; text-decoration: none; }
+a.tool-name:focus-visible { outline-color: #aab3ff; }
