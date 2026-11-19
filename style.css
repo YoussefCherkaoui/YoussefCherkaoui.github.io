@@ -128,13 +128,17 @@ a { color: inherit; }
   font-size: var(--step-small);
 }
 
-.monogram {
-  font-family: var(--display);
-  font-size: 1.75rem;
-  line-height: 1;
-  text-decoration: none;
-  letter-spacing: 0.01em;
+.avatar {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--paper-2);
+  transition: transform 200ms var(--ease-out);
 }
+.avatar:hover { transform: scale(1.06); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 
 .toplinks { display: flex; align-items: center; gap: clamp(16px, 2vw, 28px); }
 .toplinks a:not(.btn) {
@@ -241,7 +245,8 @@ a { color: inherit; }
   column-gap: var(--gap);
   align-items: start;
 }
-.path-list { grid-column: 1 / span 7; }
+.path-list { grid-column: 1 / span 8; }
+.path-side { grid-column: 10 / -1; padding-top: calc(var(--step-head) * 0.88 + 48px); }
 .path .h-display { margin-bottom: 48px; }
 
 .group {
@@ -277,15 +282,6 @@ a { color: inherit; }
   text-align: right;
 }
 
-.portrait {
-  grid-column: 10 / -1;
-  position: sticky;
-  top: 10vh;
-  margin-top: clamp(0px, 6vw, 96px);
-}
-.portrait-frame { overflow: hidden; aspect-ratio: 1 / 1; background: var(--paper-2); }
-.portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transform-origin: 50% 40%; }
-.portrait figcaption { font-size: var(--step-small); margin-top: 10px; font-style: italic; }
 
 /* ==========================================================
    STRUMENTI
@@ -629,7 +625,6 @@ a { color: inherit; }
     transition-delay: calc(var(--d, 0) * 75ms);
   }
   .js [data-reveal].is-in { opacity: 1; transform: none; }
-  [data-drift] { will-change: transform; }
 }
 
 /* ==========================================================
@@ -637,7 +632,7 @@ a { color: inherit; }
    ========================================================== */
 @media (max-width: 1024px) {
   .path-list { grid-column: 1 / span 7; }
-  .portrait { grid-column: 9 / -1; }
+  .path-side { grid-column: 9 / -1; }
   .tools-side { grid-column: 1 / -1; position: static; margin-bottom: 48px; }
   .tool-list { grid-column: 1 / -1; }
   .work-index { grid-column: 1 / span 5; }
@@ -664,7 +659,7 @@ a { color: inherit; }
   .statement-cta { display: inline-block; margin-top: 20px; padding: 10px 0; }
 
   .path { display: block; }
-  .portrait { position: static; margin-top: 56px; width: 180px; }
+  .path-side { padding-top: 0; }
   .row { grid-template-columns: 16px minmax(0, 1fr); }
   .row-value { grid-column: 2; text-align: left; margin-top: 4px; }
 

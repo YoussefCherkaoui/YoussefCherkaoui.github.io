@@ -95,18 +95,4 @@
     select(0);
   }
 
-  // ritratto: leggera deriva legata allo scroll
-  const drift = document.querySelector('[data-drift]');
-  if (drift && !reduce) {
-    let ticking = false;
-    const update = () => {
-      const r = drift.parentElement.getBoundingClientRect();
-      const p = Math.min(Math.max(1 - (r.top + r.height) / (window.innerHeight + r.height), 0), 1);
-      drift.style.transform = `scale(${1.12 - p * 0.1}) translateY(${(p - 0.5) * -4}%)`;
-      ticking = false;
-    };
-    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
-    update();
-  }
-
 })();
