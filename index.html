@@ -5,281 +5,373 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Portfolio di Youssef Cherkaoui - Developer specializzato in Python, Java e Web Development." />
+    content="Youssef Cherkaoui, sistemista IT junior a Torino e Wazuh Ambassador: reti, server, postazioni e sicurezza per aziende clienti. Studente di Informatica all'Università di Torino." />
   <meta name="author" content="Youssef Cherkaoui" />
-  <meta name="theme-color" content="#09090b" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:title" content="Youssef Cherkaoui · Sistemista IT e Wazuh Ambassador" />
+  <meta property="og:description" content="Reti, server e sicurezza per aziende clienti, a Torino." />
+  <meta property="og:image" content="img/youssef.jpg" />
 
-  <title>Youssef Cherkaoui | Software Developer</title>
+  <title>Youssef Cherkaoui · Sistemista IT e Wazuh Ambassador</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=JetBrains+Mono&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
-  <main class="bento-grid" aria-label="Portfolio di Youssef Cherkaoui">
+  <a class="skip" href="#chi-sono">Vai al contenuto</a>
 
-    <!-- BIO -->
-    <header class="card bio">
-      <div class="bio-content">
-        <img src="profile1.jpg" alt="Foto profilo di Youssef Cherkaoui"
-          class="avatar" loading="lazy" width="80" height="80" />
+  <!-- HERO -->
+  <header class="hero field-paper" id="top">
+    <nav class="topbar" aria-label="Navigazione principale">
+      <a class="monogram" href="#top" aria-label="Youssef Cherkaoui, torna all'inizio">YC</a>
+      <ul class="toplinks">
+        <li class="wide-only"><a href="#percorso">Percorso</a></li>
+        <li class="wide-only"><a href="#progetti">Progetti</a></li>
+        <li class="wide-only"><a href="#contatti">Contatti</a></li>
+        <li><a class="btn" href="mailto:youssef.cherkaoui@outlook.it">Scrivimi</a></li>
+      </ul>
+    </nav>
 
-        <h1>Youssef Cherkaoui</h1>
-        <h2 class="role">I am a <span class="typing-text"></span></h2>
+    <h1 class="hero-name lines">
+      <span class="line"><span data-line style="--i:0">Youssef</span></span>
+      <span class="line line-dark"><span data-line style="--i:1">Cherkaoui</span></span>
+    </h1>
 
-        <p class="bio-sub">
-          Sviluppo applicazioni web e software orientati a performance, chiarezza e manutenzione.
-        </p>
+    <div class="hero-sub" data-after>
+      <p class="hero-role">Sistemista IT · Wazuh Ambassador</p>
+      <p>Gestisco reti, server e postazioni di aziende clienti a Torino e porto Wazuh, il SIEM open source,
+        nelle infrastrutture che seguo. Studio Informatica all'Università di Torino.</p>
+    </div>
+  </header>
 
-        <div class="bio-actions">
-          <a class="btn-download primary"
-            href="mailto:youssef.cherkaoui@outlook.it?subject=Richiesta%20CV%20-%20Portfolio&body=Ciao%20Youssef,%0A%0AHo%20visto%20il%20tuo%20portfolio%20e%20vorrei%20ricevere%20il%20tuo%20CV.%0A%0ANome:%20%0ARuolo/Azienda:%20%0AContatto:%20%0A%0AGrazie!">
-            <i class="fa-solid fa-envelope"></i> Richiedi CV
-          </a>
-
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287"
-              target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://github.com/YoussefCherkaoui"
-              target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="availability">
-          <span class="badge">
-            <i class="fa-solid fa-bolt"></i> Disponibile per: Stage / Junior / Freelance
-          </span>
-        </div>
-
-      </div>
-    </header>
-
-    <!-- TECH STACK -->
-    <section class="card skills">
-      <h3>Tech Stack</h3>
-      <div class="tags">
-        <span><i class="fa-brands fa-html5"></i> HTML5</span>
-        <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-        <span><i class="fa-brands fa-python"></i> Python</span>
-        <span><i class="fa-brands fa-java"></i> Java</span>
-        <span><i class="fa-solid fa-code"></i> C#</span>
-        <span><i class="fa-brands fa-php"></i> PHP</span>
-        <span><i class="fa-solid fa-database"></i> SQL</span>
-        <span><i class="fa-brands fa-git-alt"></i> Git</span>
-      </div>
+  <main>
+    <!-- CHI SONO -->
+    <section class="about field-grey" id="chi-sono" aria-labelledby="h-about">
+      <h2 class="h-display" id="h-about" data-reveal>Chi sono</h2>
+      <p class="statement" data-reveal>
+        <strong>Youssef Cherkaoui</strong>, sistemista. Da <mark>agosto 2026</mark> sono Junior IT
+        Systems Technician in <mark>Socrate Technologies</mark>: help desk di primo livello,
+        configurazione delle postazioni, gestione dei ticket, ambienti <mark>Microsoft 365</mark>,
+        manutenzione delle reti, server virtuali su VMware e Proxmox, centralini VoIP e videosorveglianza IP.
+        Lavoro quasi sempre on-site, dentro le aziende dei clienti di <mark>Torino</mark>. Prima, per
+        due anni e mezzo, ho fatto assistenza tecnica e gestito il magazzino IT per il Polo di Medicina
+        dell'Università, dentro l'<mark>ospedale Molinette</mark>. Sulla sicurezza sono
+        <mark>Wazuh Ambassador</mark>: rappresento Wazuh, il SIEM open source, e lavoro con le sue regole, i decoder e gli alert,
+        e punto alla sicurezza cloud e AI. Intanto finisco la laurea in <mark>Informatica</mark>
+        all'Università di Torino.
+        <a class="statement-cta" href="mailto:youssef.cherkaoui@outlook.it">Per un colloquio o una collaborazione, scrivimi.</a>
+      </p>
     </section>
 
-    <!-- LINGUE -->
-    <section class="card languages">
-      <h3>Lingue</h3>
-      <div class="lang-list">
-        <div class="lang-item">
-          <div class="lang-left">
-            <span class="lang-name">Italiano</span>
-            <span class="lang-level">Madrelingua</span>
-          </div>
-          <div class="lang-bar"><span class="fill w-100"></span></div>
-        </div>
+    <!-- PERCORSO -->
+    <section class="path field-paper" id="percorso" aria-labelledby="h-path">
+      <div class="path-list">
+        <h2 class="h-display" id="h-path" data-reveal>Percorso</h2>
 
-        <div class="lang-item">
-          <div class="lang-left">
-            <span class="lang-name">Spagnolo</span>
-            <span class="lang-level">Madrelingua</span>
-          </div>
-          <div class="lang-bar"><span class="fill w-100"></span></div>
-        </div>
+        <h3 class="group" data-reveal>Lavoro</h3>
+        <ul class="rows">
+          <li class="row" data-reveal>
+            <span class="dot dot-blue" aria-hidden="true"></span>
+            <div class="row-main">
+              <p class="row-name">Junior IT Systems Technician</p>
+              <p class="row-org">Socrate Technologies S.r.l. · Torino, tempo pieno</p>
+              <p class="row-text">Help desk di 1° livello, postazioni di lavoro, Microsoft 365, reti, server
+                virtuali VMware e Proxmox, VoIP e videosorveglianza IP. Interventi on-site presso clienti
+                aziendali.</p>
+            </div>
+            <span class="row-value">ago 2026 – oggi</span>
+          </li>
+          <li class="row" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="row-main">
+              <p class="row-name">Tecnico informatico · IT Help Desk</p>
+              <p class="row-org">REAR soc. coop. · Ospedale Molinette, Torino · tempo pieno</p>
+              <p class="row-text">Per il Polo di Medicina dell'Università di Torino, dentro l'ospedale:
+                ticket e supporto agli utenti, troubleshooting hardware e software, impianti audio e video, gestione
+                degli asset hardware in magazzino.</p>
+            </div>
+            <span class="row-value">apr 2024 – ago 2026</span>
+          </li>
+          <li class="row" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="row-main">
+              <p class="row-name">Back office, dopo il diploma</p>
+              <p class="row-org">ENOS S.r.l. · Canelli, part-time</p>
+              <p class="row-text">Attività commerciali, logistiche e amministrative; controllo e registrazione delle
+                fatture.</p>
+            </div>
+            <span class="row-value">giu – ago 2021</span>
+          </li>
+        </ul>
 
-        <div class="lang-item">
-          <div class="lang-left">
-            <span class="lang-name">Inglese</span>
-            <span class="lang-level">Intermedio</span>
-          </div>
-          <div class="lang-bar"><span class="fill w-60"></span></div>
-        </div>
+        <h3 class="group" data-reveal>Lingue</h3>
+        <ul class="rows">
+          <li class="row row-short" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="row-main"><p class="row-name">Italiano</p></div>
+            <span class="row-value">madrelingua</span>
+          </li>
+          <li class="row row-short" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="row-main"><p class="row-name">Spagnolo</p></div>
+            <span class="row-value">madrelingua</span>
+          </li>
+          <li class="row row-short" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="row-main"><p class="row-name">Inglese</p></div>
+            <span class="row-value">intermedio</span>
+          </li>
+        </ul>
       </div>
+
+      <figure class="portrait" data-reveal>
+        <div class="portrait-frame">
+          <img src="img/youssef.jpg" alt="Ritratto di Youssef Cherkaoui, occhiali tondi e maglione blu" width="800"
+            height="800" loading="lazy" data-drift />
+        </div>
+        <figcaption>Youssef Cherkaoui, Torino.</figcaption>
+      </figure>
     </section>
 
-    <!-- CERTIFICAZIONI -->
-    <section class="card certifications">
-      <h3>Certificazioni</h3>
-
-      <a href="https://www.credly.com/users/cherkaoui.youssef"
-        target="_blank" rel="noopener noreferrer"
-        class="cert-item">
-
-        <div class="cert-icon">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
-
-        <div class="cert-info">
-          <h4>Introduction to Cybersecurity</h4>
-          <p>Cisco Networking Academy</p>
-
-          <div class="cert-meta">
-            <span>Cybersecurity</span>
-            <span>Networking</span>
-            <span>2026</span>
-          </div>
-        </div>
-
-        <span class="arrow">↗</span>
-      </a>
+    <!-- STRUMENTI -->
+    <section class="tools field-black" id="strumenti" aria-labelledby="h-tools">
+      <div class="tools-side">
+        <h2 class="h-display" id="h-tools" data-reveal>Strumenti</h2>
+        <p data-reveal>Quello che uso ogni giorno tra rack, postazioni e console. Scrivo anche codice:
+          Python, Bash e PowerShell per automatizzare; Java, C#, PHP, SQL e Swift tra università e progetti;
+          Git per tutto. Lavoro su Windows, Windows Server e macOS.</p>
+      </div>
+      <ul class="tool-list">
+        <li data-reveal><span class="tool-name">Wazuh SIEM</span><span class="tool-note">Wazuh Ambassador · regole,
+            decoder, analisi degli alert</span></li>
+        <li data-reveal><span class="tool-name">Windows Server · AD</span><span class="tool-note">utenti, gruppi,
+            domini</span></li>
+        <li data-reveal><span class="tool-name">VMware · Proxmox</span><span class="tool-note">server
+            virtuali</span></li>
+        <li data-reveal><span class="tool-name">Microsoft 365</span><span class="tool-note">ambienti
+            aziendali</span></li>
+        <li data-reveal><span class="tool-name">Reti · Fortinet</span><span class="tool-note">TCP/IP, LAN e WLAN,
+            switch, firewall</span></li>
+        <li data-reveal><span class="tool-name">VoIP · Avigilon</span><span class="tool-note">centralini SIP,
+            videosorveglianza IP</span></li>
+        <li data-reveal><span class="tool-name">Veeam · Synology</span><span class="tool-note">backup e
+            NAS</span></li>
+        <li data-reveal><span class="tool-name">Action1 · WithSecure</span><span class="tool-note">patch ed
+            endpoint</span></li>
+      </ul>
     </section>
 
     <!-- PROGETTI -->
-    <section class="card projects">
-      <h3>Progetti Selezionati</h3>
+    <section class="work field-paper" id="progetti" aria-labelledby="h-work">
+      <div class="work-head">
+        <h2 class="h-display" id="h-work" data-reveal>Progetti</h2>
+        <div class="work-head-side" data-reveal>
+          <p>App native, strumenti web e materiali di studio: quello che costruisco fuori dai rack.</p>
+          <button class="work-toggle" type="button" aria-pressed="false" hidden>Metti in pausa</button>
+        </div>
+      </div>
 
-      <a class="project-item"
-        href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase"
-        target="_blank" rel="noopener noreferrer">
-
-        <div class="project-icon">🎾</div>
-
-        <div class="project-info">
-          <h4>RacketMaster – Score App</h4>
-          <p>
-            Applicazione per la gestione e il tracciamento dei punteggi sportivi.
-          </p>
-          <div class="project-meta">
-            <span>App</span>
-            <span>OOP</span>
-            <span>UI</span>
-          </div>
+      <div class="work-grid">
+        <div class="work-index" role="tablist" aria-label="Progetti" data-reveal>
+          <button class="work-tab is-active" role="tab" id="tab-racket" aria-controls="slide-racket" aria-selected="true">
+            <span class="work-name">RacketMaster</span>
+            <span class="work-meta">App iOS e watchOS · 2025</span>
+            <span class="work-progress" aria-hidden="true"><span></span></span>
+          </button>
+          <button class="work-tab" role="tab" id="tab-grimorio" aria-controls="slide-grimorio" aria-selected="false" tabindex="-1">
+            <span class="work-name">Grimorio delle Voci</span>
+            <span class="work-meta">Web app · 2026</span>
+            <span class="work-progress" aria-hidden="true"><span></span></span>
+          </button>
+          <button class="work-tab" role="tab" id="tab-quiz" aria-controls="slide-quiz" aria-selected="false" tabindex="-1">
+            <span class="work-name">Quiz di storia</span>
+            <span class="work-meta">Web app · 2025</span>
+            <span class="work-progress" aria-hidden="true"><span></span></span>
+          </button>
+          <button class="work-tab" role="tab" id="tab-portfolio" aria-controls="slide-portfolio" aria-selected="false" tabindex="-1">
+            <span class="work-name">Questo portfolio</span>
+            <span class="work-meta">Sito web · 2026</span>
+            <span class="work-progress" aria-hidden="true"><span></span></span>
+          </button>
         </div>
 
-        <span class="arrow">↗</span>
+        <div class="work-slides">
+          <article class="work-slide is-active" role="tabpanel" id="slide-racket" aria-labelledby="tab-racket">
+            <div class="work-media devices">
+              <img src="img/racket-1.jpg" alt="RacketMaster: configurazione della partita" width="1300" height="2826" loading="lazy" />
+              <img src="img/racket-2.jpg" alt="RacketMaster durante una partita" width="1300" height="2826" loading="lazy" />
+              <img src="img/racket-4.jpg" alt="RacketMaster: storico delle partite" width="1300" height="2826" loading="lazy" />
+              <img class="watch" src="img/racket-watch.jpg" alt="RacketMaster su Apple Watch: punteggio, battito e calorie" width="416" height="496" loading="lazy" />
+            </div>
+            <div class="work-info">
+              <h3 class="slide-name">RacketMaster</h3>
+              <p class="work-desc">Segnapunti per il tennis su iPhone e Apple Watch, da un concept di Fabio Bernardi.
+                Ho aggiunto l'arbitro vocale con AVFoundation, battito e calorie con HealthKit e lo storico delle
+                partite.</p>
+              <p class="work-tags">Swift · SwiftUI · watchOS · HealthKit · AVFoundation</p>
+              <p class="work-actions">
+                <a class="btn" href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase" target="_blank" rel="noopener noreferrer">Schermate e dettagli</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="work-slide" role="tabpanel" id="slide-grimorio" aria-labelledby="tab-grimorio">
+            <div class="work-media">
+              <img src="img/cambia-voce.jpg" alt="Grimorio delle Voci: pannello di controllo e scelta delle entità" width="1600" height="1250" loading="lazy" />
+            </div>
+            <div class="work-info">
+              <h3 class="slide-name">Grimorio delle Voci</h3>
+              <p class="work-desc">Modificatore di voce nel browser per giochi di ruolo: dieci entità, tono e risonanza
+                regolabili, oscilloscopio dal vivo e registrazione delle evocazioni.</p>
+              <p class="work-tags">JavaScript · Web Audio API · Canvas · HTML e CSS</p>
+              <p class="work-actions">
+                <a class="btn" href="https://youssefcherkaoui.github.io/cambia-voce/" target="_blank" rel="noopener noreferrer">Prova online</a>
+                <a class="text-link" href="https://github.com/YoussefCherkaoui/cambia-voce" target="_blank" rel="noopener noreferrer">Codice su GitHub</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="work-slide" role="tabpanel" id="slide-quiz" aria-labelledby="tab-quiz">
+            <div class="work-media">
+              <img src="img/quiz-storiainformatica1parte.jpg" alt="Quiz di storia: domanda sull'EDVAC con quattro risposte" width="1600" height="1250" loading="lazy" />
+            </div>
+            <div class="work-info">
+              <h3 class="slide-name">Quiz di storia</h3>
+              <p class="work-desc">Sedici domande per preparare la prima parte dell'esame di Storia dell'informatica
+                all'Università di Torino.</p>
+              <p class="work-tags">HTML · JavaScript</p>
+              <p class="work-actions">
+                <a class="btn" href="https://youssefcherkaoui.github.io/quiz-storiainformatica1parte/" target="_blank" rel="noopener noreferrer">Prova online</a>
+                <a class="text-link" href="https://github.com/YoussefCherkaoui/quiz-storiainformatica1parte" target="_blank" rel="noopener noreferrer">Codice su GitHub</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="work-slide" role="tabpanel" id="slide-portfolio" aria-labelledby="tab-portfolio">
+            <div class="work-media">
+              <img class="pos-left" src="img/portfolio-v1.jpg" alt="La prima versione di questo portfolio, a riquadri su fondo scuro" width="1600" height="1250" loading="lazy" />
+            </div>
+            <div class="work-info">
+              <h3 class="slide-name">Questo portfolio</h3>
+              <p class="work-desc">La prima versione era una griglia a riquadri su fondo scuro; questa la sostituisce,
+                scritta a mano senza framework.</p>
+              <p class="work-tags">HTML · CSS · JavaScript</p>
+              <p class="work-actions">
+                <a class="btn" href="https://github.com/YoussefCherkaoui/portfolio" target="_blank" rel="noopener noreferrer">Codice su GitHub</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAZIONE E CERTIFICAZIONI -->
+    <section class="proof field-grey" id="formazione" aria-labelledby="h-proof">
+      <h2 class="h-display proof-title" id="h-proof" data-reveal>
+        <span>Formazione e</span>
+        <span class="indent">certificazioni</span>
+      </h2>
+
+      <table class="proof-table" data-reveal>
+        <caption class="sr-only">Formazione, riconoscimenti e certificazioni</caption>
+        <thead class="sr-only">
+          <tr><th scope="col">Anno</th><th scope="col">Titolo</th><th scope="col">Ente</th><th scope="col">Esito</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="year">2026</td>
+            <td class="title">Wazuh Ambassador</td>
+            <td>Wazuh · SIEM e XDR open source</td>
+            <td class="end">Ambassador</td>
+          </tr>
+          <tr>
+            <td class="year"></td>
+            <td class="title"><a href="https://www.credly.com/users/cherkaoui.youssef" target="_blank"
+                rel="noopener noreferrer">Introduction to Cybersecurity</a></td>
+            <td>Cisco Networking Academy</td>
+            <td class="end">Certificato, feb</td>
+          </tr>
+          <tr class="gap" aria-hidden="true"><td colspan="4"></td></tr>
+          <tr>
+            <td class="year">2023 – 27</td>
+            <td class="title">Laurea triennale in Informatica</td>
+            <td>Università degli Studi di Torino</td>
+            <td class="end">In corso</td>
+          </tr>
+          <tr>
+            <td class="year">2018 – 23</td>
+            <td class="title">Diploma, Sistemi Informativi Aziendali</td>
+            <td>I.I.S. Copernico-Luxemburg, Torino</td>
+            <td class="end">73 / 100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="contact field-blue" id="contatti" aria-labelledby="h-contact">
+      <div class="contact-top">
+        <h2 class="h-display" id="h-contact" data-reveal>Contatti</h2>
+        <p class="contact-lead" data-reveal>Per un colloquio, una collaborazione o una consulenza, scrivimi
+          un'email.</p>
+      </div>
+
+      <a class="email-display" href="mailto:youssef.cherkaoui@outlook.it" data-reveal>
+        <span>youssef.cherkaoui@</span><span>outlook.it</span>
       </a>
 
-      <a class="project-item"
-        href="https://github.com/YoussefCherkaoui/portfolio"
-        target="_blank" rel="noopener noreferrer">
-
-        <div class="project-icon">🌐</div>
-
-        <div class="project-info">
-          <h4>Portfolio Personale</h4>
-          <p>Sito web responsive con design minimal e moderno.</p>
-          <div class="project-meta">
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-        </div>
-
-        <span class="arrow">↗</span>
-      </a>
-
-      <div class="project-item project-soon">
-        <div class="project-icon">⏳</div>
-        <div class="project-info">
-          <h4>Nuovi progetti in arrivo</h4>
-          <p>Portfolio in aggiornamento.</p>
-        </div>
+      <div class="contact-corners">
+        <p>Torino, Piemonte</p>
+        <p>
+          <a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/YoussefCherkaoui" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
       </div>
     </section>
-
-    <!-- ESPERIENZA -->
-    <section class="card experience">
-      <h3>Percorso Professionale</h3>
-
-      <div class="job">
-        <h4>Junior IT Systems Technician</h4>
-        <p class="company">Socrate Technologies S.r.l.</p>
-        <small class="date">Ago 2026 - Presente</small>
-      </div>
-
-      <div class="job">
-        <h4>Tecnico Informatico / Help Desk</h4>
-        <p class="company">REAR soc.coop.</p>
-        <small class="date">Apr 2024 - Ago 2026</small>
-      </div>
-
-      <div class="job">
-        <h4>Studente diplomato (Back Office)</h4>
-        <p class="company">ENOS SRL</p>
-        <small class="date">Giu 2021 - Ago 2021</small>
-      </div>
-    </section>
-
-    <!-- FORMAZIONE -->
-    <section class="card education">
-      <h3>Formazione</h3>
-
-      <div class="edu-item">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <div>
-          <strong>Laurea in Informatica (In corso)</strong>
-          <p>Università degli Studi di Torino</p>
-        </div>
-      </div>
-
-      <hr class="divider" />
-
-      <div class="edu-item">
-        <i class="fa-solid fa-school"></i>
-        <div>
-          <strong>Sistemi Informativi Aziendali</strong>
-          <p>I.I.S. Copernico-Luxemburg (Torino)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATTO -->
-    <a href="mailto:youssef.cherkaoui@outlook.it"
-      class="card contact">
-      <div class="contact-content">
-        <h3>Collaboriamo?</h3>
-        <p class="email-text">youssef.cherkaoui@outlook.it</p>
-        <div class="icon-box">
-          <i class="fa-solid fa-paper-plane"></i>
-        </div>
-      </div>
-    </a>
-
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Youssef Cherkaoui. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="footer field-black">
+    <p class="footer-name" aria-hidden="true">Youssef Cherkaoui</p>
+    <div class="footer-row">
+      <ul class="footer-places">
+        <li><a href="mailto:youssef.cherkaoui@outlook.it">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/YoussefCherkaoui" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+      <nav class="footer-links" aria-label="Pagina">
+        <ul>
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#percorso">Percorso</a></li>
+          <li><a href="#strumenti">Strumenti</a></li>
+        </ul>
+        <ul>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#formazione">Formazione</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://github.com/YoussefCherkaoui/RacketMaster-Showcase" target="_blank" rel="noopener noreferrer">RacketMaster</a></li>
+          <li><a href="https://youssefcherkaoui.github.io/cambia-voce/" target="_blank" rel="noopener noreferrer">Grimorio delle Voci</a></li>
+          <li><a href="https://www.credly.com/users/cherkaoui.youssef" target="_blank" rel="noopener noreferrer">Credly</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; <span id="year">2026</span> Youssef Cherkaoui</p>
+      <a href="#top">Torna su</a>
+    </div>
   </footer>
 
-  <script>
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const textElement = document.querySelector(".typing-text");
-    const words = ["Developer", "IT Specialist", "Problem Solver"];
-    let wordIndex = 0;
-    let charIndex = 0;
-
-    function typeOnce() {
-      if (!textElement || reduceMotion) return;
-
-      const word = words[wordIndex];
-      textElement.textContent = word.substring(0, charIndex + 1);
-      charIndex++;
-
-      if (charIndex === word.length) {
-        setTimeout(() => {
-          charIndex = 0;
-          wordIndex = (wordIndex + 1) % words.length;
-        }, 1500);
-      }
-
-      setTimeout(typeOnce, 90);
-    }
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.addEventListener("DOMContentLoaded", typeOnce);
-  </script>
-
+  <script src="script.js" defer></script>
 </body>
+
 </html>
