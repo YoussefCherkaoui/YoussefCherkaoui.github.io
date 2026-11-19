@@ -95,4 +95,74 @@
     select(0);
   }
 
+  // popup per scrivere l'email
+  const dialog = document.getElementById('mail-dialog');
+  const mailForm = document.getElementById('mail-form');
+  if (dialog && mailForm && typeof dialog.showModal === 'function') {
+    const TO = 'youssef.cherkaoui@outlook.it';
+    const body = mailForm.querySelector('#m-body');
+    const error = mailForm.querySelector('#m-error');
+    const copyBtn = mailForm.querySelector('[data-copy]');
+    let opener = null;
+
+    document.querySelectorAll('[data-mail]').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        opener = link;
+        error.textContent = '';
+        body.removeAttribute('aria-invalid');
+        dialog.showModal();
+        mailForm.querySelector('#m-name').focus();
+      });
+    });
+
+    dialog.addEventListener('close', () => { if (opener) opener.focus(); });
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    mailForm.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+
+    const compose = () => {
+      const name = mailForm.querySelector('#m-name').value.trim();
+      const subject = mailForm.querySelector('#m-subject').value.trim() || 'Contatto dal portfolio';
+      const text = body.value.trim();
+      const signature = name ? `\n\n${name}` : '';
+      return { subject, text: `Ciao Youssef,\n\n${text}${signature}` };
+    };
+
+    mailForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!body.value.trim()) {
+        error.textContent = 'Scrivi il messaggio prima di inviarlo.';
+        body.setAttribute('aria-invalid', 'true');
+        body.focus();
+        return;
+      }
+      const { subject, text } = compose();
+      const s = encodeURIComponent(subject);
+      const b = encodeURIComponent(text);
+      const via = e.submitter ? e.submitter.value : 'app';
+      if (via === 'gmail') {
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${TO}&su=${s}&body=${b}`, '_blank', 'noopener');
+      } else if (via === 'outlook') {
+        window.open(`https://outlook.live.com/mail/0/deeplink/compose?to=${TO}&subject=${s}&body=${b}`, '_blank', 'noopener');
+      } else {
+        window.location.href = `mailto:${TO}?subject=${s}&body=${b}`;
+      }
+      dialog.close();
+    });
+
+    body.addEventListener('input', () => {
+      if (body.value.trim()) { error.textContent = ''; body.removeAttribute('aria-invalid'); }
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(TO);
+        copyBtn.textContent = 'Indirizzo copiato';
+      } catch {
+        copyBtn.textContent = TO;
+      }
+      setTimeout(() => { copyBtn.textContent = 'Copia indirizzo'; }, 2500);
+    });
+  }
+
 })();

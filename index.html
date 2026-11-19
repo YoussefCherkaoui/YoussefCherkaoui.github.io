@@ -39,7 +39,7 @@
         <li class="wide-only"><a href="#percorso">Percorso</a></li>
         <li class="wide-only"><a href="#progetti">Progetti</a></li>
         <li class="wide-only"><a href="#contatti">Contatti</a></li>
-        <li><a class="btn" href="mailto:youssef.cherkaoui@outlook.it">Scrivimi</a></li>
+        <li><a class="btn" href="mailto:youssef.cherkaoui@outlook.it" data-mail>Scrivimi</a></li>
       </ul>
     </nav>
 
@@ -70,7 +70,7 @@
         <mark>Wazuh Ambassador</mark>: rappresento Wazuh, il SIEM open source, e lavoro con le sue regole, i decoder e gli alert,
         e punto alla sicurezza cloud e AI. Intanto finisco la laurea in <mark>Informatica</mark>
         all'Università di Torino.
-        <a class="statement-cta" href="mailto:youssef.cherkaoui@outlook.it">Per un colloquio o una collaborazione, scrivimi.</a>
+        <a class="statement-cta" href="mailto:youssef.cherkaoui@outlook.it" data-mail>Per un colloquio o una collaborazione, scrivimi.</a>
       </p>
     </section>
 
@@ -326,7 +326,7 @@
           un'email.</p>
       </div>
 
-      <a class="email-display" href="mailto:youssef.cherkaoui@outlook.it" data-reveal>
+      <a class="email-display" href="mailto:youssef.cherkaoui@outlook.it" data-mail data-reveal>
         <span>youssef.cherkaoui@</span><span>outlook.it</span>
       </a>
 
@@ -346,7 +346,7 @@
     <p class="footer-name" aria-hidden="true">Youssef Cherkaoui</p>
     <div class="footer-row">
       <ul class="footer-places">
-        <li><a href="mailto:youssef.cherkaoui@outlook.it">Email</a></li>
+        <li><a href="mailto:youssef.cherkaoui@outlook.it" data-mail>Email</a></li>
         <li><a href="https://www.linkedin.com/in/youssef-cherkaoui-a10644287" target="_blank"
             rel="noopener noreferrer">LinkedIn</a></li>
         <li><a href="https://github.com/YoussefCherkaoui" target="_blank" rel="noopener noreferrer">GitHub</a></li>
@@ -375,6 +375,41 @@
       <a href="#top">Torna su</a>
     </div>
   </footer>
+
+  <!-- POPUP EMAIL -->
+  <dialog class="mail-dialog" id="mail-dialog" aria-labelledby="mail-title">
+    <form class="mail-form" id="mail-form" novalidate>
+      <div class="mail-head">
+        <h2 class="mail-title" id="mail-title">Scrivimi</h2>
+        <button class="mail-close" type="button" data-close aria-label="Chiudi">Chiudi</button>
+      </div>
+      <p class="mail-to">A: youssef.cherkaoui@outlook.it</p>
+
+      <div class="mail-field">
+        <label for="m-name">Nome e azienda</label>
+        <input id="m-name" name="nome" type="text" autocomplete="name" maxlength="120" />
+      </div>
+      <div class="mail-field">
+        <label for="m-subject">Oggetto</label>
+        <input id="m-subject" name="oggetto" type="text" maxlength="140" value="Contatto dal portfolio" />
+      </div>
+      <div class="mail-field">
+        <label for="m-body">Messaggio</label>
+        <textarea id="m-body" name="messaggio" rows="6" maxlength="4000" required aria-describedby="m-error"></textarea>
+        <p class="mail-error" id="m-error" role="alert"></p>
+      </div>
+
+      <div class="mail-actions">
+        <button class="btn btn-big" type="submit" value="app">Invia con la tua app di posta</button>
+        <div class="mail-alt">
+          <span>oppure apri in</span>
+          <button class="mail-link" type="submit" value="gmail">Gmail</button>
+          <button class="mail-link" type="submit" value="outlook">Outlook</button>
+          <button class="mail-link" type="button" data-copy>Copia indirizzo</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
 
   <script src="script.js" defer></script>
 </body>
