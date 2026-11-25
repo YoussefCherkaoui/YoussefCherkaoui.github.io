@@ -2,7 +2,7 @@
 
 Il mio sito personale: sistemista IT a Torino, Wazuh Ambassador e studente di Informatica all'Università di Torino.
 
-**Sito:** https://youssefcherkaoui.github.io/portfolio/
+**Sito:** https://youssefcherkaoui.github.io/
 
 ## Struttura
 
