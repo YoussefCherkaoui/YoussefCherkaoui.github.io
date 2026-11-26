@@ -1,0 +1,42 @@
+# Youssef Cherkaoui
+
+> Youssef Cherkaoui is an IT systems technician based in Turin (Torino), Italy, and a Wazuh Ambassador. He manages networks, servers, workstations and security for client companies at Socrate Technologies S.r.l., leads Wazuh SIEM deployments for those clients, and studies Computer Science at the University of Turin.
+
+Youssef Cherkaoui (Italian: sistemista IT a Torino) works on-site for business clients: first-level help desk, Microsoft 365 and Active Directory, virtual servers on VMware and Proxmox, VoIP and IP video surveillance, Veeam backups on Synology NAS and Fortinet firewalls. He designs, installs and tunes Wazuh SIEM/XDR deployments (platform, agents, custom rules and alert monitoring) and publishes his custom Wazuh rules on GitHub.
+
+## Current role
+
+- Junior IT Systems Technician (apprenticeship), Socrate Technologies S.r.l., Turin — since August 2026.
+
+## Previous experience
+
+- IT technician / Help Desk, REAR soc. coop., for the University of Turin at the Polo di Medicina, Molinette hospital, Turin — April 2024 to August 2026.
+- Back office and bookkeeping internship (PCTO school-work programme), ENOS S.r.l., Canelli — summer 2021.
+
+## Certifications and recognitions
+
+- Wazuh Ambassador (Wazuh, November 2026).
+- Omada Certified Network Administrator (OCNA) Routing & Switching, TP-Link Systems Inc. — November 2026, valid until November 2029.
+- Introduction to Cybersecurity, Cisco Networking Academy — February 2026.
+
+## Education
+
+- Bachelor's degree in Computer Science (Informatica), University of Turin — 2023 to 2027, in progress.
+- High-school diploma in Business Information Systems, I.I.S. Copernico-Luxemburg, Turin — 2018 to 2023.
+
+## Skills
+
+Wazuh SIEM, WithSecure, Action1, Windows Server, Active Directory, Microsoft 365, VMware, Proxmox, Veeam, Synology, TCP/IP, routing and switching, TP-Link Omada, Fortinet, VoIP/SIP, Avigilon; Python, Bash, PowerShell, Java, C#, PHP, SQL, Swift. Languages: Italian (native), Spanish (native), English (intermediate).
+
+## Links
+
+- [Portfolio (Italian)](https://youssefcherkaoui.github.io/): full profile, projects and contact.
+- [Portfolio (English)](https://youssefcherkaoui.github.io/en/): short English profile.
+- [LinkedIn](https://www.linkedin.com/in/youssef-cherkaoui-it)
+- [GitHub](https://github.com/YoussefCherkaoui)
+- [wazuh-rules](https://github.com/YoussefCherkaoui/wazuh-rules): custom Wazuh rules, decoders and tests.
+- [Credly](https://www.credly.com/users/cherkaoui.youssef)
+
+## Contact
+
+youssef.cherkaoui@outlook.it

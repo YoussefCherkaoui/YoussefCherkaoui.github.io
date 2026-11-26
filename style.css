@@ -785,3 +785,31 @@ a.tool-name:focus-visible { outline-color: #aab3ff; }
     max-height: 92svh;
   }
 }
+
+/* ==========================================================
+   DOMANDE FREQUENTI
+   ========================================================== */
+.faq {
+  padding: var(--section-y) var(--m);
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  align-items: start;
+}
+.faq-side { grid-column: 1 / span 4; position: sticky; top: 10vh; }
+.faq-side .h-display { margin-bottom: 24px; }
+.faq-side p { font-size: var(--step-body); color: var(--soft); max-width: 30ch; }
+.faq-list { grid-column: 6 / -1; margin: 0; }
+.faq-item + .faq-item { margin-top: clamp(28px, 3vw, 40px); }
+.faq-item dt { font-size: var(--step-lead); line-height: 1.2; font-weight: 500; }
+.faq-item dd { margin: 8px 0 0; font-size: var(--step-body); max-width: 62ch; }
+.faq-item a { color: var(--blue); text-underline-offset: 3px; }
+.faq-item a:hover { color: var(--ink); }
+
+@media (max-width: 1024px) {
+  .faq-side { grid-column: 1 / -1; position: static; margin-bottom: 40px; }
+  .faq-list { grid-column: 1 / -1; }
+}
+@media (max-width: 720px) {
+  .faq { display: block; }
+}
